@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Remove Youtube Shorts UI",
-    "version": "1.0",
+    "version": "1.1",
 
-    "description": "Removes the Youtube Shorts UI by changing the \"shorts/\" part in the URL to \"watch/\".",
+    "description": "Removes the Youtube Shorts UI by changing the \"shorts/\" part in the URL to \"watch?v=\".",
 
     "icons": {
         "48": "icons/NoYoutubeShortsUI_Icon.png"
@@ -15,5 +15,14 @@
             "js": ["RemoveYoutubeShortsUI.js"],
             "run_at": "document_start"
         }
-    ]
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "data_collection_permissions": {
+            "required": ["none"]
+            },
+            "id": "RemoveYoutubeShortsUI@JONITOKING"
+        }
+    }
 }
